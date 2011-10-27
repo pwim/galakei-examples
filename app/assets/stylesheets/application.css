@@ -5,3 +5,13 @@
  *= require_self
  *= require_tree . 
 */
+
+body {
+  color: #FFEC63;
+  background-color: #B1D9D4;
+}
+
+h1 {
+  background-color: #86B8B1;
+  border-bottom: 5px #F2938E;
+}
