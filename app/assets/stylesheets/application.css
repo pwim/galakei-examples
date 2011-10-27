@@ -7,11 +7,12 @@
 */
 
 body {
-  color: #FFEC63;
+  color: #F2938E;
   background-color: #B1D9D4;
 }
 
 h1 {
   background-color: #86B8B1;
-  border-bottom: 5px #F2938E;
+  border-bottom: 5px #FFEC63;
+  text-align: center;
 }
