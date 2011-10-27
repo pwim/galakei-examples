@@ -9,6 +9,9 @@ gem 'sqlite3'
 gem 'galakei'
 gem 'haml'
 
+group :production do
+  gem 'pg'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
