@@ -8,7 +8,7 @@ gem 'rails', '3.1.1'
 gem 'galakei'
 gem 'haml'
 
-group :production, :test do
+group :development, :test do
   gem 'sqlite3'
 end
 
