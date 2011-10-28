@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>File: docomo_css.rb [Galakei RDoc]</title>
+
+  <link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet" />
+
+  <script src="../../js/jquery.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../../js/thickbox-compressed.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../../js/quicksearch.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../../js/darkfish.js" type="text/javascript"
+    charset="utf-8"></script>
+</head>
+
+<body class="file file-popup">
+  <div id="metadata">
+    <dl>
+      <dt class="modified-date">Last Modified</dt>
+      <dd class="modified-date">2011-10-25 14:48:25 +0900</dd>
+
+      
+      <dt class="requires">Requires</dt>
+      <dd class="requires">
+        <ul>
+        
+        </ul>
+      </dd>
+      
+
+      
+    </dl>
+  </div>
+
+  <div id="documentation">
+    
+    <div class="description">
+      <h2>Description</h2>
+      
+<h2>Inlining Styles</h2>
+
+<h3>Basic Inlining</h3>
+
+<p>Old docomo handsets <a href="http://www.keitai-dev.net/CSS">don’t support
+external stylesheets</a>. Additionally, only very limited CSS is supported.
+galakei/docomo_css automatically inlines CSS and manipulates markup to
+overcome these limitations.</p>
+
+<pre># css file
+h1 { color: red; background-color: blue}
+
+# source html
+&lt;h1&gt;Foo&lt;/h1&gt;
+
+# outputted html
+&lt;div style=&quot;background-color: blue;&quot;&gt;&lt;h1&gt;&lt;span style=&quot;color:red;&quot;&gt;Foo&lt;/span&gt;&lt;/h1&gt;/div&gt;</pre>
+
+<h3>Borders</h3>
+
+<p>Furthermore, the css border property is supported through the “spacer.gif”
+technique.</p>
+
+<pre># css file
+div { border-bottom: 5px solid #000000; }
+
+# source html
+&lt;div&gt;Foo&lt;/div&gt;
+
+# outputted html
+&lt;div&gt;Foo&lt;/div&gt;
+&lt;img src=&quot;/galakei/spacer/000000&quot; width=&quot;100%&quot; height=&quot;5&quot;&gt;</pre>
+
+<p>This will generate a 1px by 1px image, emulating the effect of borders on
+old docomo handsets.</p>
+
+    </div>
+    
+  </div>
+</body>
+</html>
+
